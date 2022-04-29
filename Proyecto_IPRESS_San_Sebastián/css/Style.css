@@ -1,0 +1,265 @@
+﻿html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2; /*interlineado*/
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Globales*/
+h1, h2, h3 {
+    font-family: 'Philosopher', sans-serif;
+    margin: 0 0 4rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 4rem 0 4rem 0 ;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 0;
+}
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/**header y nav**/
+.nombre-sitio {
+    margin-top: 5rem 0;
+    text-align: center;
+}
+
+    .nombre-sitio span {
+        color: #037bc0;
+    }
+
+.contenedor-nav-pr {
+    border-top: 0.1rem solid #e1e1e1;
+}
+
+.nav-prinicipal { /*Flex*/
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .nav-prinicipal a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgba(47, 138, 212, 0.904);
+    }
+
+.hero {
+    background-image: url("../images/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+}
+    .hero:before {
+        content: '';
+        position: absolute;
+        top: 25.5rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 55rem;
+        background-size: cover;
+        background-color: rgba(0,0,0,0.6);
+    }
+    .hero h1 {
+        font-size: 60px;
+        color: #fff;
+        position: relative
+    }
+
+/*NOSOTROS*/
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,#037bc0 100%),url(../images/nosotros1.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid {
+    display: flex;
+    justify-content: flex-end;
+    /*display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8rem;*/
+}
+
+.textoNosotros {
+    flex-basis: 50%; /*ancho*/
+    padding-left: 10rem;
+    color: #FFFFFF;
+    /*grid-column: 2 /3;*/
+}
+.nosotros-title {
+    color: #000;
+    font-size: 4.5rem;
+    font-weight:lighter;
+}
+
+
+/*Contacto*/
+.txt-contacto {
+    width: 100%;
+    padding: 12px 20px;
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-contacto {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+
+    .btn-contacto::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: #212121;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+    }
+
+    .btn-contacto:hover {
+        color: #fff;
+        background-color: #02588ad3;
+    }
+
+.contacto {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,#037bc0 100%),url(../images/contacto.jpg);
+    background-position: left center;
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 100rem;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+.ubicacion {
+    padding: 8rem 0 0 0;
+}
+
+
+/*Servicios*/
+.categorias {
+    padding-top: 5rem;
+}
+
+    .categorias h2 {
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .categorias a {
+        display: block;
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+        .categorias a:hover {
+            background-color: #037bc0;
+            color: #FFFFFF;
+            border-radius:1rem;
+        }
+    .categorias img {
+        background-position: left center;
+        padding: 8rem 0;
+        background-repeat: no-repeat;
+        background-size: 40%, 50rem;
+    }
+
+.list-cat { /*Grid*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.list-gal { /*Grid*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:0;
+}
+
+.list-gal2 { /*Grid*/
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 0;
+}
